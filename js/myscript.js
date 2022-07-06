@@ -32,4 +32,9 @@ const app = new Vue({
             },
         ],
     },
+    methods: {
+        removeToDo: function(index) {
+            this.todos.splice(index, 1);
+        },
+    },
 })

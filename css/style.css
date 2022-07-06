@@ -59,6 +59,11 @@ h2{
     line-height: 20px;
 }
 
+.remove:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
 .done{
     text-decoration: line-through;
 }
