@@ -22,7 +22,7 @@
                     <h2>Tasks:</h2>
                     <div v-for="(element, index) in todos" class="mb-20">
                         <div class="remove d-inlineblock">X</div>
-                        <span> {{todos[index].text}} </span>
+                        <span :class="{'done' : element.done}"> {{todos[index].text}} </span>
                     </div> 
                 </section>
             </div>

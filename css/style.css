@@ -59,6 +59,9 @@ h2{
     line-height: 20px;
 }
 
+.done{
+    text-decoration: line-through;
+}
 /* common classes */
 
 .d-flex{
