@@ -38,10 +38,14 @@ const app = new Vue({
             this.todos.splice(index, 1);
         },
         addToDo: function() {
+            if (this.userInput !== '') {
             this.todos.push({
                 text: this.userInput,
                 done: false
             });
+            } else {
+                alert('Non hai inserito nessun ToDo');
+            }
             this.userInput = '';
         }
     },
