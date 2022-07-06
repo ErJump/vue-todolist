@@ -19,8 +19,8 @@
         <main>
             <div class="container">
                 <section id="bottoni">
-                    <input type="text" v-model="userInput">
-                    <button>Add Task</button>
+                    <input type="text" v-model="userInput" placeholder="Inserisci una nuova task">
+                    <button @click="addToDo">Add Task</button>
                 </section>
                 <section id="lista">
                     <h2>Tasks:</h2>

@@ -37,5 +37,12 @@ const app = new Vue({
         removeToDo: function(index) {
             this.todos.splice(index, 1);
         },
+        addToDo: function() {
+            this.todos.push({
+                text: this.userInput,
+                done: false
+            });
+            this.userInput = '';
+        }
     },
 })
