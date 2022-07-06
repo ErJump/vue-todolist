@@ -67,6 +67,18 @@ h2{
 .done{
     text-decoration: line-through;
 }
+
+/* sezione bottoni */
+#bottoni{
+    border-bottom: 2px solid #f6f8f9;
+    padding: 10px 0px 10px 30px;
+    margin-bottom: 20px;
+}
+#bottoni > *{
+    border-radius: 5px;
+    padding: 10px;
+}
+
 /* common classes */
 
 .d-flex{

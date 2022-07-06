@@ -18,6 +18,10 @@
         </header>
         <main>
             <div class="container">
+                <section id="bottoni">
+                    <input type="text" v-model="userInput">
+                    <button>Add Task</button>
+                </section>
                 <section id="lista">
                     <h2>Tasks:</h2>
                     <div v-for="(element, index) in todos" class="mb-20">

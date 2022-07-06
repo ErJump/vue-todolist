@@ -31,6 +31,7 @@ const app = new Vue({
                 done: true
             },
         ],
+        userInput: '',
     },
     methods: {
         removeToDo: function(index) {
