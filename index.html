@@ -19,7 +19,7 @@
         <main>
             <div class="container">
                 <section id="bottoni">
-                    <input type="text" v-model="userInput" placeholder="Inserisci una nuova task">
+                    <input type="text" v-model="userInput" placeholder="Inserisci una nuova task" @keyup.enter="addToDo">
                     <button @click="addToDo">Add Task</button>
                 </section>
                 <section id="lista">
