@@ -47,6 +47,9 @@ const app = new Vue({
                 alert('Non hai inserito nessun ToDo');
             }
             this.userInput = '';
+        },
+        changeStatus: function(index) {
+            this.todos[index].done = !this.todos[index].done;
         }
     },
 })

@@ -26,7 +26,7 @@
                     <h2>Tasks:</h2>
                     <div v-for="(element, index) in todos" class="mb-20">
                         <div class="remove d-inlineblock" @click="removeToDo(index)">X</div>
-                        <span :class="{'done' : element.done}" @click="element.done = !element.done"> {{todos[index].text}} </span>
+                        <span :class="{'done' : element.done}" @click="changeStatus(index)"> {{todos[index].text}} </span>
                     </div> 
                 </section>
             </div>
